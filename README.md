@@ -106,14 +106,16 @@ Run the production build, compare a screenshot with the Figma at the same deskto
 
 ### Steps to deploy to Vercel
 
-The GitHub repository is ready. To deploy to Vercel:
+The GitHub repository is ready at https://github.com/nishant233032024/campuspe-connect. To deploy to Vercel:
 
-**Option A — Vercel web UI (easiest):**
+**Option A — Vercel web UI (recommended, easiest):**
 1. Go to https://vercel.com/new
 2. Click "Import Git Repository"
-3. Select `nishant233032024/campuspe-connect`
-4. Keep the default Next.js settings (Vercel auto-detects Next.js)
+3. Select `nishant233032024/campuspe-connect` from the list
+4. Keep the default Next.js settings — Vercel auto-detects Next.js and uses the correct build command
 5. Click "Deploy"
+6. Wait for the build to complete (usually 1-2 minutes)
+7. Your site will be live at `https://campuspe-connect.vercel.app`
 
 **Option B — Vercel CLI:**
 ```bash
@@ -126,8 +128,6 @@ vercel login
 # Deploy to production
 vercel --prod
 ```
-
-After deployment, Vercel will assign a URL like `https://campuspe-connect.vercel.app`.
 
 ### Actual URLs
 

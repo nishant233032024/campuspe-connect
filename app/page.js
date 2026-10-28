@@ -144,7 +144,6 @@ function Header() {
   return (
     <header className="site-header" id="top">
       <div className="header-brand">
-        <span className="freebuff-badge" aria-label="Freebuff">Freebuff</span>
         <a className="wordmark" href="#top" aria-label="CampusPe home">
           <span className="wordmark-icon" aria-hidden="true">C<span>p</span></span>
           <span>Campus<span className="wordmark-accent">Pe</span></span>

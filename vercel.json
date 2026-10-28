@@ -1,7 +1,1 @@
-{
-  "buildCommand": "npm run build",
-  "installCommand": "npm install",
-  "framework": "nextjs",
-  "outputDirectory": ".next",
-  "regions": ["india"]
-}
+{"buildCommand": "npm run build", "installCommand": "npm install", "framework": "nextjs", "outputDirectory": ".next"}

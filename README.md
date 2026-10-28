@@ -100,7 +100,39 @@ Run the production build, compare a screenshot with the Figma at the same deskto
 
 ## Repository and deployment
 
-- Project name recommendation: **CampusPe Connect**.
-- GitHub repository: pending; no repository was created.
-- Live deployment: pending; no deployment was created or verified.
-- A GitHub account/repository decision and authorized hosting account/session are needed to publish and provide real URLs.
+- Project name: **CampusPe Connect**.
+- GitHub repository: pending — credentials are not configured in this environment, so the repository must be created manually.
+- Live deployment: pending — Vercel deployment must be triggered manually after the repository is pushed.
+
+### Steps to publish (run from the project root)
+
+```bash
+# 1. Create the public GitHub repository
+#    Option A — GitHub CLI (install from https://cli.github.com/):
+gh repo create campuspe-connect --public --description "CampusPe landing page - responsive Next.js implementation"
+
+#    Option B — GitHub web UI:
+#    Go to https://github.com/new, name the repository campuspe-connect,
+#    keep it Public, and create it without a README/.gitignore/LICENSE.
+
+# 2. Push the local repository
+git remote add origin git@github.com:nishant233032024/campuspe-connect.git
+git branch -M main
+git push -u origin main
+
+# 3. Deploy to Vercel
+#    Option A — Vercel CLI (install from https://vercel.com/cli):
+vercel --prod
+
+#    Option B — Vercel web UI:
+#    Go to https://vercel.com/new, import the GitHub repository
+#    nishant233032024/campuspe-connect, keep the default Next.js settings,
+#    and click Deploy.
+
+# 4. After deployment, update this README with the real URLs.
+```
+
+### Actual URLs
+
+- GitHub repository: _pending_ — https://github.com/nishant233032024/campuspe-connect (create and push first)
+- Live deployment: _pending_ — Vercel will assign a URL such as `https://campuspe-connect.vercel.app` after deployment
